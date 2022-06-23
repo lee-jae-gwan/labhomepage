@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Spatial Analysis Lab</title>
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}"  />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles_research_gis.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index">Spatial Analysis LAB</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="people">People</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="research_area">Research</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="publication">Publication</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="alumni">Alumni</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('static/assets/img/post-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>GIS</h1>
+                            <span class="meta">
+                                Geographic Information System
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <img src="{% static 'assets/img/gis_logo.jpg' %}" height=500px width=500px>
+                        <h4>GIS란</h4>
+                        <ul type="square">
+                            <li class="explain">지리정보시스템, 지리정보체계라고 불리며 지리정보를 컴퓨터 데이터(GIS 데이터)로 변환하여 효율적으로 활용하기 위한 정보시스템</li>
+                            <li class="explain">위치자료 (spatial data)와 속성자료(attribute data)를 통합·관리하여 지도, 도표 및 그림들과 같은 여러 형태의 정보를 제공함</li>
+                            <li class="explain">GIS는 인간의 현실생활과 밀접한 관계가 있는 모든 자료를 취급하므로서 광범위한 활용분야를 가지고 있다. GIS의 활용분야는 토지, 자원, 도시, 환경, 교통, 농업, 해양 및 국방에 이르기까지 다양한 산업 전반에 걸쳐 빠르게 발전하고 있음</li>
+                        </ul>
+                        <hr class="my-5" />
+                        <h4>활용 패턴</h4>
+                        <p>
+                        <ol type="i">
+                            <li class="explain">데이터 통합 및 관리: 실세계 지형지물과 자산에대한 형상의 위치, 속성 정보의 수집 및 관리</li>
+                            <li class="explain">데이터 매핑 및 시각화: 지도상의 공간정보를 기반으로 데이터 관계성과 분포 현황 이해</li>
+                            <li class="explain">현장업무 지원: 모바일을 통한 관리자와 현장 요원의 업무 할당 및 진행 상황 파악 </li>
+                            <li class="explain">현황 모니터링: 실시간으로 수집되는 데이터의 추적 및 관리를 통한 현황 모니터링 </li>
+                            <li class="explain">공간 분석: 데이터의 위치정보를 기반으로 숨겨진 패턴, 규칙, 의미 도출 </li>
+                            <li class="explain">계획 및 설계: 여러 가지 계획안 중 최적의 시나리오 선정 및 해결책 모색 </li>
+                            <li class="explain">의사결정 지원: 경험에 의존한 의사결정에서 벗어나 데이터를 기반으로한 의사결정 수행 </li>
+                            <li class="explain">시민 참여: 시민, 지역 공동체의 소통과 참여를 통해 지역 문제 해결</li>
+                            <li class="explain">공유 및 협업: 누구나 쉽게 공간정보에 접근 및 활용하여 공유할 수 있는 플랫폼 제공 </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2022</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
